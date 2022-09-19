@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+    <update id="add" parameterType="com.shiyi.pojo.Provider">
+        update smbms_provider set proCode = #{proCode},proName = #{proName},proDesc = #{proDesc},
+        proContact = #{proContact},proPhone = #{proPhone},proAddress = #{proAddress},proFax = #{proFax},
+        createdBy = #{createdBy},creationDate = #{creationDate},modifyDate = #{modifyDate},modifyBy = #{modifyBy}
+    </update>
+</mapper>
